@@ -1,0 +1,23 @@
+!
+! Make Caps_Lock a Control_L
+!
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
+
+!
+! Swap Mod1 and Mod5
+!
+remove Mod1 = Alt_L Meta_L Alt_L Meta_L
+remove Mod5 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keysym Alt_L Meta_L Alt_L Meta_L = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keysym ISO_Level3_Shift NoSymbol ISO_Level3_Shift = Alt_L Meta_L Alt_L Meta_L
+add Mod1 = Alt_L Meta_L
+add Mod5 = ISO_Level3_Shift
+
+!
+! Make Control_L a Mod1
+!
+remove Control = Control_L
+keysym Control_L = Alt_L Meta_L Alt_L Meta_L 
+add Mod1 = Alt_L Meta_L

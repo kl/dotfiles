@@ -1,0 +1,14 @@
+# Blacklist files/folders in root directory
+/*
+
+# Whitelist files in the root directory
+!.gitignore
+!.zshrc
+!.tmux.conf
+!.i3status.conf
+!.Xmodmap
+
+# Whitelist subfolders/files
+!.i3/
+.i3/*
+!.i3/config
