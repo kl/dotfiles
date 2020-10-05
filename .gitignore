@@ -12,3 +12,7 @@
 !.i3/
 .i3/*
 !.i3/config
+
+!.config/
+.config/*
+!.config/picom.conf

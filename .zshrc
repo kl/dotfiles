@@ -8,7 +8,7 @@ export ZSH="/home/kl/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -89,8 +89,21 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+#
 # ===ALIAS===
+#
 alias dswp="rm -r $HOME/.cache/vim/swap"
 
+#
+# ==FUNCTIONS===
+#
+function m() {
+    mpv --player-operation-mode=pseudo-gui --no-terminal "$@" &!
+}
+
+#
 # ===PATH===
+#
+PATH=$HOME/bin:$PATH
 PATH=$HOME/.emacs.d/bin:$PATH
+
