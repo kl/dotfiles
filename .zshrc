@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # ===ALIAS===
 #
 alias dswp="rm -r $HOME/.cache/vim/swap"
+alias o="xdg-open"
 
 #
 # ==FUNCTIONS===
