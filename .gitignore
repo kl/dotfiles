@@ -21,3 +21,7 @@
 !.config/i3/
 .config/i3/*
 !.config/i3/status.toml
+
+!.mitmproxy/
+.mitmproxy/*
+!.mitmproxy/config.yaml

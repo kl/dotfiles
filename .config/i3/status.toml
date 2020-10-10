@@ -6,6 +6,7 @@ name = "awesome"
 [icons.overrides]
 cpu = ""
 memory = ""
+pomodoro = ""
 
 [[block]]
 block = "cpu"
@@ -42,6 +43,16 @@ interval = 30
 format = "%a %y-%m-%d %R"
 
 [[block]]
+block = "pomodoro"
+length = 25
+break_length = 5
+message = "Take a break!"
+break_message = "Back to work!"
+use_nag = true
+nag_path = "i3-nagbar"
+
+[[block]]
 block = "sound"
 driver = "alsa"
+natural_mapping = true
 
