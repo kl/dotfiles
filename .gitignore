@@ -8,6 +8,7 @@
 !.i3status.conf
 !.Xmodmap
 !.inputrc
+!.profile
 
 # Whitelist subfolders/files
 !.i3/
@@ -25,3 +26,5 @@
 !.mitmproxy/
 .mitmproxy/*
 !.mitmproxy/config.yaml
+
+!.doom.d
