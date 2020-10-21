@@ -103,7 +103,7 @@ http2_priority: false
 # hostname should be used. The supplied value is interpreted as a
 # regular expression and matched on the ip or the hostname. Type
 # sequence of str.
-ignore_hosts: []
+ignore_hosts: ["^audio3.mixcloud.com:443$"]
 
 # Intercept filter expression. Type optional str.
 intercept:

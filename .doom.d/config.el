@@ -37,7 +37,6 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -54,3 +53,26 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;;===KEY BINDINGS===
+(define-prefix-command 'a-map)
+(global-set-key (kbd "C-a") 'a-map)
+(map! :map a-map
+      "-" 'split-window-below
+      "|" 'split-window-right
+      "k" 'windmove-up
+      "j" 'windmove-down
+      "l" 'windmove-right
+      "h" 'windmove-left
+      "c" 'tab-bar-new-tab
+      "x" 'tab-bar-close-tab
+      "q" 'delete-window)
+
+(global-set-key (kbd "C-a C-h") 'tab-bar-switch-to-prev-tab)
+(global-set-key (kbd "C-a C-l") 'tab-bar-switch-to-next-tab)
+
+;;===PROGRAMMING LANGS===
+(setq ruby-indent-level 2)
+(setq seeing-is-believing-prefix "C-ö")
+(add-hook 'ruby-mode-hook 'seeing-is-believing)
+(require 'seeing-is-believing)

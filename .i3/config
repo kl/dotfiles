@@ -265,6 +265,8 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 # Disable picom because it caused massive lag on fullscreen windows.
+# To fix screen tearing I enabled "Force Full Composition Pipeline" in nvidia-settings,
+# and set the layers.acceleration.force-enabled in Firefox about:config.
 #; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet

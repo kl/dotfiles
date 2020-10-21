@@ -94,6 +94,9 @@ source $ZSH/oh-my-zsh.sh
 #
 alias dswp="rm -r $HOME/.cache/vim/swap"
 alias o="xdg-open"
+alias em="emacs -nw"
+alias cl="rlwrap sbcl"
+alias cle="sbcl --script"
 
 #
 # ==FUNCTIONS===
