@@ -4,6 +4,7 @@
 # Whitelist files in the root directory
 !.gitignore
 !.zshrc
+!.zsh_aliases
 !.tmux.conf
 !.i3status.conf
 !.Xmodmap
