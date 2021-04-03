@@ -71,6 +71,7 @@ ZSH_THEME="pygmalion"
 plugins=(git extract vi-mode)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_aliases
 
 # User configuration
 
@@ -88,19 +89,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
 #
-# ===ALIAS===
 #
-alias dswp="rm -r $HOME/.cache/vim/swap"
-alias o="xdg-open"
-alias em="emacs -nw"
-alias cl="rlwrap sbcl"
-alias cle="sbcl --script"
-
-#
-# ==FUNCTIONS===
-#
-function m() {
-    mpv --player-operation-mode=pseudo-gui --no-terminal "$@" &!
-}

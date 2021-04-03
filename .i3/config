@@ -62,6 +62,7 @@ bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+n exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+p exec --no-startup-id ~/bin/togglestardict
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -69,6 +70,7 @@ bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+bindsym XF86Calculator exec --no-startup-id qalculate-gtk 
 
 # focus_follows_mouse no
 
@@ -207,9 +209,10 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="Qalculate-gtk"] floating enable
 
-# Move cmus to scratchpad
-for_window [instance="cmus"] move scratchpad
+# Move music player to scratchpad
+for_window [instance="sayonara"] move scratchpad
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -282,8 +285,8 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 # Enable Japanese input
 exec --no-startup-id fcitx -d
-# Start cmus in scratchpad
-exec --no-startup-id alacritty --class cmus -e cmus
+# Start music player in scratchpad
+exec --no-startup-id sayonara
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

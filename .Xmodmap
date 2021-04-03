@@ -21,3 +21,11 @@ add Mod5 = ISO_Level3_Shift
 remove Control = Control_L
 keysym Control_L = Alt_L Meta_L Alt_L Meta_L 
 add Mod1 = Alt_L Meta_L
+
+!
+! Alt + IJKL to arrow keys
+!
+keycode 43 = h H NoSymbol NoSymbol Left Left
+keycode 44 = j J NoSymbol NoSymbol Down Down
+keycode 45 = k K NoSymbol NoSymbol Up Up
+keycode 46 = l L NoSymbol NoSymbol Right Right
