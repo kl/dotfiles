@@ -75,6 +75,8 @@ source $HOME/.zsh_aliases
 
 # User configuration
 
+eval "$(rbenv init - zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -91,3 +93,5 @@ source $HOME/.zsh_aliases
 # export ARCHFLAGS="-arch x86_64"
 #
 #
+
+
