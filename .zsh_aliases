@@ -4,12 +4,11 @@
 # ===ALIAS===
 #
 alias dswp="rm -r $HOME/.cache/vim/swap"
-alias o="xdg-open"
+alias o="detach xdg-open"
 alias cl="rlwrap sbcl"
 alias cle="sbcl --script"
 alias rr="evcxr"
 alias vim="nvim"
-alias apktool="java -jar $HOME/software/apktool/apktool.jar"
 alias startemu="emulator -avd Pixel_3a_XL_API_30 -writable-system -no-snapshot-load"
-alias jadx="_JAVA_OPTIONS=-Xmx8G jadx"
-alias jadx-gui="_JAVA_OPTIONS=-Xmx8G jadx-gui"
+alias rga="rg --no-ignore --hidden"
+alias hex="hexdump -C"
